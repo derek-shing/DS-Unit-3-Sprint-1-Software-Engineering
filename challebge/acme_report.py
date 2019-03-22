@@ -17,7 +17,7 @@ def generate_products(num_products=30):
         weight = randint(5, 100)
         flammability = uniform(0,2.5)
         products.append(Product(name=name, price=price, weight=weight, flammability=flammability))
-    # TODO - your code! Generate and add random products.
+
     return products
 
 
@@ -39,7 +39,7 @@ def inventory_report(products):
     print ('Average weight:',total_weight/len(products))
     print ('Average flammability:',total_flammability/len(products))
 
-    pass  # TODO - your code! Loop over the products to calculate the report.
+    pass
 
 
 if __name__ == '__main__':

@@ -270,6 +270,18 @@ career here, you'll have to answer the following:
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
+During code review, the first thing to look at is whether the function work or not.
+To test this, the code should able be splited into different smaller unit with clear 
+expected input and output. In this case, we know where the error can araise. After that,
+we check the degree of reused code. we want the code is in good structure and most of them
+can be used for the same purpose. Lastly, we will review the style of the code so that others
+can undetstand your work easily.
+
+Containers pack everthing, including os,packages,etc,  related to one project into one unit.
+This unit can be deployed and installed in other computer. The advanage of this is we can make 
+sure every people running the same thing regradless of their os and config.If the project have 
+error, we can just delete the container and it will not affect our computer.
+
 ### Part 8 - Turn it in!
 
 Add all the files you wrote (`acme.py`, `acme_report.py`, and `acme_test.py`),

@@ -35,7 +35,13 @@ class AcmeReportTests(unittest.TestCase):
         """Test default number of product weight being 30."""
         self.assertEqual(len(generate_products()), 30)
 
-    #def test_legal_names(self):
+    def test_legal_names(self):
+        r = generate_products()
+        for product in r:
+            first = product.name.split()[0]
+            second = product.name.split()[1]
+            self.assertIn(first,ADJECTIVES)
+            self.assertIn(second,NOUNS)
 
 
 
